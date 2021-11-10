@@ -1,0 +1,536 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  /* layout */
+#fullpage {width: 100vw;}
+.section {position: relative; width: 100vw; height: 100vh;}
+.inner {position: relative; margin: 0 auto; max-width: 1080px;}
+
+/* menu */
+#menu {position: absolute; display: block; width: 100%; height: 60px; top: 0; margin: 0; z-index: 9;}
+.btn_menu {position:fixed; width:50px; height:50px; background-color:#FF6B67; z-index:99; top:30px; right:50px; border-radius:50%; cursor:pointer; transition:all ease 0.5s;}
+.btn_menu span {width:22px; height:2px; display:block; background-color:#fff; margin:16px auto 0px; position:relative;}
+.btn_menu span:before {content:""; position:absolute; width:22px; height:2px; top:8px; left:0; background-color:#fff;}
+.btn_menu span:after {content:""; position:absolute; width:22px; height:2px; top:16px; left:0; background-color:#fff;}
+
+
+/* 메인 */
+
+  .main {
+      width: 1920px;
+      height: 1080px;
+      /*background: #989898;*/
+  }
+
+.main .main-img{
+    position: relative;
+    width: 100%;
+    bottom: 60px;
+}
+.main .main-text h1{
+    position: absolute;
+    top: 350px;
+    left: 735px;
+    color: #fff;
+    font-size: 40px;
+    font-family: '여기어때 잘난체';
+}
+.main .main-text h1 p{
+    margin-top: 5px;
+}
+
+
+/* 사이드바 */
+/* about-me */
+.about-me {
+    width: 1920px;
+    height: 1080px;
+    /*background: #e0e0e0;*/
+    position: relative;
+}
+
+.about-me .about-img {
+    position: absolute;
+}
+
+.about-me .about-text {
+    position: absolute;
+    margin-top: 310px;
+}
+
+.about-me .about-text .profile {
+    position: absolute;
+    left: 960px;
+}
+
+.about-me .about-text .profile h1 {
+    color: #FF6B67;
+    font-family: 'Noto Sans';
+    font-size: 30px;
+}
+.about-me .about-text .profile p {
+    margin-top: 26px;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 18px;
+}
+.about-me .about-text .skill {
+    position: relative;
+    left: 1340px;
+}
+.about-me .about-text .skill h1 {
+    color: #FF6B67;
+    font-family: 'Noto Sans';
+    font-size: 30px;
+    display: flex;
+}
+.about-me .about-text .skill p {
+    margin-top: 26px;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.about-me .about-text .license {
+    position: relative;
+    left: 960px;
+    margin-top: 100px;
+}
+.about-me .about-text .license h1 {
+    color: #FF6B67;
+    font-family: 'Noto Sans';
+    font-size: 30px;
+}
+.about-me .about-text .license p {
+    margin-top: 26px;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* portfolio */
+.portfolio1 {
+    width: 1920px;
+    height: 1080px;
+    /*background: #D7d7d7;*/
+    display: flex;
+    position: relative;
+}
+.portfolio1 .port-text1 {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 340px;
+}
+
+.portfolio1 .port-text1 h1 {
+    color: #FF6B67;
+    font-family: 'Noto Sans';
+    font-size: 30px;
+}
+
+.portfolio1 .port-text1 h2 {
+    font-family: 'Noto Sans KR';
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.portfolio1 .port-text1-1{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 340px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+}
+
+.portfolio1 .port-text1-2{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 460px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+}
+.portfolio1 .port-text1-1 p, .portfolio1 .port-text1-2 p{
+    margin-bottom: 20px;
+}
+
+.portfolio1 .p1-1-button{
+    width: 140px;
+    height: 32px;
+    margin-top: 700px;
+    margin-left: 460px;
+    border-radius: 7px;
+    text-align: center;
+    background: #FF6B67;
+}
+
+.portfolio1 .p1-1-button p {
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.portfolio1 .p1-2-button p {
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.portfolio1 .p1-2-button{
+    width: 140px;
+    height: 32px;
+    margin-top: 700px;
+    margin-left: 25px;
+    border-radius: 7px;
+    text-align: center;
+    background: #FF6B67;
+}
+
+
+.portfolio1 .port-img{
+    position: absolute;
+    margin-top: 166px;
+    margin-left: 800px;
+}
+
+.portfolio2 {
+    width: 1920px;
+    height: 1080px;
+    /*background: rgb(223, 223, 223);*/
+    display: flex;
+    position: relative;
+}
+.portfolio2 .port-text1 {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 340px;
+}
+
+.portfolio2 .port-text1 h1 {
+    color: #FF6B67;
+    font-family: 'Noto Sans';
+    font-size: 30px;
+}
+
+.portfolio2 .port-text1 h2 {
+    font-family: 'Noto Sans KR';
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.portfolio2 .port-text1-1{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 340px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+}
+
+.portfolio2 .port-text1-2{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 460px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+}
+.portfolio2 .port-text1-1 p, .portfolio2 .port-text1-2 p{
+    margin-bottom: 20px;
+}
+
+
+.portfolio2 .p1-1-button{
+    width: 140px;
+    height: 32px;
+    margin-top: 700px;
+    margin-left: 460px;
+    border-radius: 7px;
+    text-align: center;
+    background: #FF6B67;
+}
+
+.portfolio2 .p1-1-button p {
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.portfolio2 .p1-2-button p {
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.portfolio2 .p1-2-button{
+    width: 140px;
+    height: 32px;
+    margin-top: 700px;
+    margin-left: 25px;
+    border-radius: 7px;
+    text-align: center;
+    background: #FF6B67;
+}
+
+
+
+.portfolio2 .port-img{
+    position: absolute;
+    margin-top: 166px;
+    margin-left: 800px;
+}
+
+
+.portfolio3 {
+    width: 1920px;
+    height: 1080px;
+    /*background: #D7d7d7;*/
+    display: flex;
+    position: relative;
+}
+.portfolio3 .port-text1 {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 340px;
+}
+
+.portfolio3 .port-text1 h1 {
+    color: #FF6B67;
+    font-family: 'Noto Sans';
+    font-size: 30px;
+}
+
+.portfolio3 .port-text1 h2 {
+    font-family: 'Noto Sans KR';
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.portfolio3 .port-text1-1{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 340px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+}
+
+.portfolio3 .port-text1-2{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 460px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+}
+.portfolio3 .port-text1-1 p, .portfolio3 .port-text1-2 p{
+    margin-bottom: 20px;
+}
+
+
+.portfolio3 .p1-1-button{
+    width: 140px;
+    height: 32px;
+    margin-top: 700px;
+    margin-left: 460px;
+    border-radius: 7px;
+    text-align: center;
+    background: #FF6B67;
+}
+
+.portfolio3 .p1-1-button p {
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.portfolio3 .p1-2-button p {
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.portfolio3 .p1-2-button{
+    width: 140px;
+    height: 32px;
+    margin-top: 700px;
+    margin-left: 25px;
+    border-radius: 7px;
+    text-align: center;
+    background: #FF6B67;
+}
+
+
+
+.portfolio3 .port-img{
+    position: absolute;
+    margin-top: 166px;
+    margin-left: 800px;
+}
+
+
+
+.portfolio4 {
+    width: 1920px;
+    height: 1080px;
+    /*background: #e0e0e0;*/
+    display: flex;
+    position: relative;
+}
+.portfolio4 .port-text1 {
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 340px;
+}
+
+.portfolio4 .port-text1 h1 {
+    color: #FF6B67;
+    font-family: 'Noto Sans';
+    font-size: 30px;
+}
+
+.portfolio4 .port-text1 h2 {
+    font-family: 'Noto Sans KR';
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.portfolio4 .port-text1-1{
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 340px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+}
+
+.portfolio4 .port-text1-2{
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 460px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+}
+.portfolio4 .port-text1-1 p, .portfolio4 .port-text1-2 p{
+    margin-bottom: 20px;
+}
+
+
+.portfolio4 .p1-1-button{
+    width: 140px;
+    height: 32px;
+    margin-top: 700px;
+    margin-left: 460px;
+    border-radius: 7px;
+    text-align: center;
+    background: #FF6B67;
+}
+
+.portfolio4 .p1-1-button p {
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.portfolio4 .p1-2-button p {
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.portfolio4 .p1-2-button{
+    width: 140px;
+    height: 32px;
+    margin-top: 700px;
+    margin-left: 25px;
+    border-radius: 7px;
+    text-align: center;
+    background: #FF6B67;
+}
+
+
+
+.portfolio4 .port-img{
+    position: absolute;
+    margin-top: 166px;
+    margin-left: 800px;
+}
+
+/* contact */
+.contact {
+    width: 1920px;
+    height: 1080px;
+    background: #fff;
+}
+
+.contact .contact-text p {
+    font-size: 40px;
+    font-family: '여기어때 잘난체';
+    margin-top: 120px;
+    color: #FF6B67;
+    text-align: center;
+}
+.contact .qr {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    overflow: hidden;
+    margin-top: 100px;
+    /*border: 1px solid #777;*/
+    border-radius: 40px;
+    margin-left: 685px;
+}
+
+.contact .qr img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+/* bye */
+
+.bye {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    /*background: #989898;*/
+}
+
+.bye .bye-img{
+  position: absolute;
+  width: 100%;
+  bottom: 60px;
+}
+.bye .bye-text h1{
+  position: absolute;
+  top: 350px;
+  left: 735px;
+  color: #fff;
+  font-size: 40px;
+  font-family: '여기어때 잘난체';
+}
+
+.bye .bye-text h1 p{
+  margin-top: 5px;
+}
